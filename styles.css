@@ -222,3 +222,71 @@ footer {
   .free-ship { position: relative; top: 0; left: 0; text-align: center; margin: 10px; display: block; }
   .card { flex: 1 1 100%; } /* Cards take full width on small phones */
 }
+
+
+
+
+
+
+.faq-container {
+  background-color: #151a2d;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+/* Style the question button */
+.faq-question {
+  background-color: transparent;
+  border: none;
+  color: #d6f5f6;
+  cursor: pointer;
+  padding: 20px 0;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover, 
+.faq-question.active {
+  color: #a4a4a4;
+}
+
+/* The plus/minus icon */
+.faq-question .icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the plus to look like an 'x' when active */
+.faq-question.active .icon {
+  transform: rotate(45deg);
+}
+
+/* Hide the answer by default and prep the animation */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+}
