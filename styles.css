@@ -223,11 +223,6 @@ footer {
   .card { flex: 1 1 100%; } /* Cards take full width on small phones */
 }
 
-
-
-
-
-
 .faq-container {
   background-color: #151a2d;
   border-radius: 8px;
@@ -289,4 +284,86 @@ footer {
   padding-bottom: 20px;
   color: #ffffff;
   line-height: 1.6;
+}
+
+/* ========================================================
+   NEW ADDITIONS FOR INFO.HTML
+   ======================================================== */
+
+/* General content blocks to match main page cards */
+.info-section {
+  background: #111827;
+  padding: 30px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.info-section p {
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+/* Styling the 'What We Offer' list cleanly */
+.offers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offers-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e2e8f0;
+}
+
+.offers-list li:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  color: #22c55e;
+  font-size: 18px;
+}
+
+/* The Water Parameters Grid */
+.params-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.param-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #334155;
+  transition: transform 0.3s;
+  color: #e2e8f0;
+}
+
+.param-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.param-card strong {
+  display: block;
+  color: #0ea5e9;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Centers the FAQ section without breaking your existing .faq-container constraints */
+.faq-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
 }
